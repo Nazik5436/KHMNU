@@ -1,6 +1,8 @@
 body {
     font-family: sans-serif;
     margin: 0;
+    background-color: #000;
+    color: aliceblue;
 }
 
 .main-title {
@@ -55,7 +57,6 @@ body {
     top: -5px;
     width: 25px;
     height: 25px;
-    border: 2px solid #a00;
     border-radius: 50%;
     text-align: center;
     line-height: 25px;

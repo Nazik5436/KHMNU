@@ -1,5 +1,10 @@
 body {
-    background-color: #555;
+    background: #3F5EFB;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .box {
@@ -7,15 +12,21 @@ body {
     width: 250px;
     padding: 20px;
     border: 1px solid #ccc;
-    background-color: #fdf5c9;
+    background-color: white;
+    border-radius: 15px;
+    height: 200px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     margin: 10px;
-    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.box:hover{
+    transform: scale(1.1);
 }
 
 .sample-title {
     text-align: center;
-    color: #e0d08f;
+    color: black;
     text-shadow: 1px -1px 0px #fff, -1px 1px 0px #333;
 }
 
