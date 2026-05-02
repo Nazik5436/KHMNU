@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #eaeaea;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid #007bff;
+    padding: 3px;
+}
+
+.card-details {
+    flex-grow: 1;
+}
+
+.card-name {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #1a1a1a;
+    margin-bottom: 3px;
+}
+
+.card-position {
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.card-phone {
+    font-weight: 500;
+    font-size: 0.9em;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+}
+
+.card-phone-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    fill: #007bff;
+}
