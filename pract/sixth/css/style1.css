@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.4s ease;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.controls-container {
+    background-color: #ffffff;
+    padding: 25px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.task-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.color-select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    max-width: 250px;
+}
+
+.color-select:focus {
+    border-color: #666666;
+}

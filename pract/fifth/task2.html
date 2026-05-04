@@ -7,121 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            margin: 0;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h2 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 30px;
-            font-size: 1.5rem;
-            max-width: 800px;
-        }
-
-        .buttons-container {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .author-btn {
-            background-color: #ffffff;
-            border: 2px solid #3498db;
-            color: #3498db;
-            padding: 10px 20px;
-            font-size: 1rem;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        .author-btn:hover {
-            background-color: #3498db;
-            color: #ffffff;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(52, 152, 219, 0.2);
-        }
-
-        .author-btn:active {
-            transform: translateY(0);
-        }
-    </style>
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
 
     <h2>Про Батьківщину та патріотизм. Про рідну мову, українську пісню</h2>
     
     <div id="buttons-container" class="buttons-container">
-        </div>
+        
+    </div>
 
-    <script>
-        const studentVariant = 10; 
-
-        const authorsData = [
-            { author: "Сенека", quote: "Люблять батьківщину не за те, що вона велика, а за те, що своя" },
-            { author: "Овідій", quote: "І дим батьківщини солодкий." },
-            { author: "Д. Байрон", quote: "Той, хто не любить своєї країни, нічого любити не може" },
-            { author: "Г. Сковорода", quote: "Кожному мила своя сторона." },
-            { author: "Д. Лихачев", quote: "Усвідомлена любов до свого народу не поєднується з ненавистю до інших." },
-            { author: "Горацій", quote: "Ті, що виїздять за море, міняють небо, а не душу." },
-            { author: "Цицерон", quote: "Для нас дорогі батьки, дорогі діти, близькі, родичі; але всі уявлення про любов до чого-небудь поєднані в одному слові «вітчизна»." },
-            { author: "М. Шумило", quote: "Мова — це глибина тисячоліть." },
-            { author: "Ч. Айтматов", quote: "Той, хто в біді кидає свій народ, стає його ворогом." },
-            { author: "П. Гольбах", quote: "Де немає свободи, там немає і вітчизни." },
-            { author: "Т. Шевченко", quote: "В своїй хаті своя й правда, І сила, і воля." },
-            { author: "Д. Павличко", quote: "Вітчизна — ось і альфа, і омега!" },
-            { author: "Л. Костенко", quote: "Нації вмирають не від інфаркту. Спочатку їм відбирає мову." },
-            { author: "Т. Шевченко", quote: "Нема на світі України, немає другого Дніпра" },
-            { author: "П. Чубинський", quote: "Ще не вмерла України і слава, і воля." },
-            { author: "Л. Толстой", quote: "Я дуже люблю народну українську мову, звучну, барвисту й таку м'яку." },
-            { author: "В. Голобородько", quote: "Мова вмирає, коли наступне покоління втрачає розуміння значення слів." },
-            { author: "М. Гоголь", quote: "М. Гоголь Дивуєшся дорогоцінності мови нашої: в ній що не звук, то подарунок, все крупно, зернисто, як самі перла." },
-            { author: "Е. Челебі", quote: "Українці — стародавній народ, а мова їхня мова багатша і всеосяжніша, ніж персидська, китайська, монгольська і всілякі інші." },
-            { author: "О. Пахльовська", quote: "Раби — це нація, котра не має Слова. Тому й не зможе захистить себе." },
-            { author: "І. Рєпін", quote: "Відчуваю й усвідомлюю, яка це красива й легка українська мова." },
-            { author: "Олександр Олесь", quote: "Для всіх ти мертва і смішна, Для всіх ти бідна і нещасна, Моя Україно пре-красна, Пісень і волі сторона." },
-            { author: "Л. Толстой", quote: "Слово є вчинок." },
-            { author: "А. Міцкевич", quote: "Народна пісня-духовне обличчя нації" },
-            { author: "О. Довженко", quote: "Українська пісня — це бездонна душа українського народу, це його слава." },
-            { author: "П. Тичина", quote: "Я єсть народ, якого Правди сила ніким звойована ще не була." },
-            { author: "А. Франс", quote: "Немає магії сильнішої, ніж магія слів." },
-            { author: "Старий Заповіт", quote: "Споконвіку було Слово." },
-            { author: "Володимир Мономах", quote: "Коли щось умієте, того не забувайте, а чого не вмієте — то того учітесь..." },
-            { author: "Г. Сковорода", quote: "Безперервно думай, щоб пізнати себе" },
-            { author: "Т. Шевченко", quote: "Борітеся — поборете!" }
-        ];
-
-        const container = document.getElementById('buttons-container');
-
-        for (let i = 0; i < 5; i++) {
-            let index = (studentVariant - 1 + i) % authorsData.length;
-            let currentData = authorsData[index];
-
-            let btn = document.createElement('button');
-            btn.className = 'author-btn';
-            btn.textContent = currentData.author;
-
-            btn.onclick = function() {
-                alert(currentData.quote);
-            };
-
-            container.appendChild(btn);
-        }
-    </script>
-
+    <script src="js/script2.js"></script>
 </body>
 </html>

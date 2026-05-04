@@ -1,0 +1,23 @@
+.wrapper {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #333;
+}
+
+.section-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.data-list {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+.result-text {
+    margin-top: 10px;
+}
