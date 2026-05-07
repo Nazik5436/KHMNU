@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 6 - E-mail форма (Telegram Bot)</title>
+    <link rel="stylesheet" href="css/style6.css">
+</head>
+<body>
+
+<div class="mail-wrapper">
+    <h3 class="mail-title">Написати нам</h3>
+    
+    <form id="tg-form">
+        
+        <div class="mail-group">
+            <label class="mail-label" for="mail-subj">Тема листа:</label>
+            <input class="mail-input" type="text" id="mail-subj" placeholder="Введіть тему" required>
+        </div>
+        
+        <div class="mail-group">
+            <label class="mail-label" for="mail-body">Повідомлення:</label>
+            <textarea class="mail-textarea" id="mail-body" placeholder="Напишіть ваше повідомлення..." required></textarea>
+        </div>
+
+        <div class="mail-buttons">
+            <button class="mail-btn" type="submit" id="submit-btn">Відправити</button>
+            <button class="mail-btn mail-btn-reset" type="reset">Очистити</button>
+        </div>
+
+    </form>
+</div>
+
+<script src="js/script6.js">
+    
+</script>
+
+</body>
+</html>

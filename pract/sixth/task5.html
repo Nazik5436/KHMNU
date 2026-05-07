@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 5 - Сума чисел</title>
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+
+<div class="calc-wrapper">
+    <h3 class="calc-title">Калькулятор</h3>
+    <form id="calc-form">
+        <div class="calc-group">
+            <label class="calc-label" for="calc-num1">Перше число:</label>
+            <input class="calc-input" type="number" id="calc-num1" value="0">
+        </div>
+        
+        <div class="calc-group">
+            <label class="calc-label" for="calc-num2">Друге число:</label>
+            <input class="calc-input" type="number" id="calc-num2" value="0">
+        </div>
+        
+        <div class="calc-group">
+            <label class="calc-label" for="calc-result">Результат:</label>
+            <input class="calc-result-input" type="text" id="calc-result" readonly placeholder="0">
+        </div>
+        
+        <button class="calc-btn" type="button" onclick="calculateSum()">Обчислити</button>
+    </form>
+</div>
+
+<script src="js/script5.js">
+</script>
+
+</body>
+</html>

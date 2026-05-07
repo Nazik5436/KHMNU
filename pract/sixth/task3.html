@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 3 - Тестування (Варіант 10)</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div class="quiz-question">Запитання: Що літає?</div>
+        
+        <select id="answer-select" class="quiz-select">
+            <option value="none" disabled selected>-- Оберіть варіант --</option>
+            <option value="wrong1">Собака</option>
+            <option value="correct">Птах</option>
+            <option value="wrong2">Дерево</option>
+        </select>
+
+        <button class="quiz-button" onclick="checkQuizAnswer()">Перевірка рішення</button>
+    </div>
+
+    <script src="js/script3.js"></script>
+</body>
+</html>

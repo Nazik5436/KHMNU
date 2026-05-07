@@ -1,0 +1,357 @@
+body {
+    font-family: Noto Sans;
+    background: rgb(196, 183, 255);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body .form {
+    width: 760px;
+    height: 950px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 80px;
+}
+
+body .form .form__item__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    padding: 60px 98px 35px 98px;
+}
+
+body .form .form__item__name .form__item__name__label {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgb(102, 102, 102);
+    padding-bottom: 8px;
+}
+
+body .form .form__item__name .form__item__input__name {
+    width: 564px;
+    padding: 16px;
+    color: rgb(102, 102, 102);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+body .form .form__item__name .form__item__input__name:focus {
+    outline: none;
+    border: 2px solid rgb(122, 92, 250);
+    background: rgb(255, 255, 255);
+}
+
+body .form .form__item__mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    padding: 0px 98px 35px 98px;
+}
+
+body .form .form__item__mail .form__item__mail__label {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgb(102, 102, 102);
+    padding-bottom: 8px;
+}
+
+body .form .form__item__mail .form__item__input__mail {
+    width: 564px;
+    padding: 16px;
+    color: rgb(102, 102, 102);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+body .form .form__item__mail .form__item__input__mail:focus {
+    outline: none;
+    border: 2px solid rgb(122, 92, 250);
+    background: rgb(255, 255, 255);
+}
+
+body .form .form__item__pas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    padding: 0px 98px 35px 98px;
+}
+
+body .form .form__item__pas .form__item__pas__label {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgb(102, 102, 102);
+    padding-bottom: 8px;
+}
+
+body .form .form__item__pas .form__item__input__pas {
+    width: 564px;
+    padding: 16px;
+    color: rgb(102, 102, 102);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+body .form .form__item__pas .form__item__input__pas:focus {
+    outline: none;
+    border: 2px solid rgb(122, 92, 250);
+    background: rgb(255, 255, 255);
+}
+
+body .form .form__item__pas .form__item__pas__par {
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 8px;
+}
+
+body .check__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 98px 35px 98px;
+}
+
+body .check__block .check__block__item {
+    display: none;
+}
+
+body .check__block .fake__box {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+}
+
+body .check__block .fake__box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 8px;
+    background: rgb(122, 92, 250);
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+body .check__block .check__block__item:checked+.fake__box::before {
+    opacity: 1;
+}
+
+body .check__block .check__text {
+    padding-left: 8px;
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+body .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0px 98px 35px 98px;
+}
+
+body .container .button {
+    background: rgb(122, 92, 250);
+    width: 49px;
+    height: 24px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+body .container .button::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 200px;
+    margin: 3px;
+    background-color: white;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+body .container .tog__par {
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 0 0 10px;
+}
+
+body .container .tog:checked+.button {
+    background: rgb(196, 183, 255);
+}
+
+body .container .tog:checked+.button::before {
+    -webkit-transform: translateX(25px);
+    transform: translateX(25px);
+}
+
+body .container .tog {
+    display: none;
+}
+
+body .label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px;
+    padding: 0px 98px 32px 98px;
+}
+
+body .radio {
+    display: none;
+}
+
+body .fake {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50%;
+    position: relative;
+}
+
+body .fake::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: rgb(122, 92, 250);
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+body .text {
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+body .radio:checked+.fake::before {
+    opacity: 1;
+}
+
+body .last__but {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 580px;
+    padding-top: 50px;
+}
+
+body .last__but .last__but__item {
+    width: 172px;
+    height: 56px;
+    border: 2px solid rgb(122, 92, 250);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    color: rgb(122, 92, 250);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+body .last__but .last__but__item:hover {
+    background: rgb(122, 92, 250);
+    color: white;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}

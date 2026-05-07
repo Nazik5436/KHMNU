@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style4.css">
+    <title>Form</title>
+</head>
+<body>
+    
+    <form action="#" class="form">
+
+                                <!-- Text item -->
+
+        <div class="form__item__name">
+            <label for="name" class="form__item__name__label">Username</label>
+            <input type="text" name="name" id="name" class="form__item__input__name" placeholder="Enter username" minlength="1">
+        </div>
+
+        <div class="form__item__mail">
+            <label for="mail" class="form__item__mail__label">Email</label>
+            <input type="email" name="mail" id="mail" class="form__item__input__mail" placeholder="@mail.com" minlength="1">
+        </div>
+
+        <div class="form__item__pas">
+            <label for="pas" class="form__item__pas__label">Password</label>
+            <input type="password" name="pas" id="pas" class="form__item__input__pas" placeholder="Enter password" minlength="4" maxlength="12">
+            <p class="form__item__pas__par">Your password is between 4 and 12 characters</p>
+        </div>
+
+        
+        <label class="check__block">
+            <input type="checkbox" class="check__block__item" name="checkbox">
+            <span class="fake__box"></span>
+            <span class="check__text">Remember me</span>
+        </label>
+
+                                <!-- Toggle but -->
+
+        <div class="container">
+            <input type="checkbox" id="tog" class="tog">
+            <label for="tog" class="button"></label>
+            <p class="tog__par">On / Off</p>
+        </div>
+
+                                <!-- Radio -->
+
+        <label class="label">
+            <input type="radio" class="radio" name="radio">
+            <span class="fake"></span>
+            <span class="text">Radio selection 1</span>
+        </label>
+
+        <label class="label">
+            <input type="radio" class="radio" name="radio">
+            <span class="fake"></span>
+            <span class="text">Radio selection 2</span>
+        </label>
+
+        <label class="label">
+            <input type="radio" class="radio" name="radio">
+            <span class="fake"></span>
+            <span class="text">Radio selection 3</span>
+        </label>
+        
+                                    <!-- Buttons -->
+
+        <div class="last__but">
+            <input type="reset" class="last__but__item" value="Cancel"/>
+            <input type="submit" class="last__but__item" value="Send"/>
+        </div>
+
+
+    </form>
+
+</body>
+</html>
